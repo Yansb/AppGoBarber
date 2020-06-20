@@ -90,7 +90,7 @@ const SignUp: React.FC = () => {
           <Container>
             <Image source={logoImg} />
             <View>
-              <Title>Faça seu logon</Title>
+              <Title>Crie sua conta</Title>
             </View>
             <Form ref={formRef} onSubmit={handleSignUp}>
               <Input
