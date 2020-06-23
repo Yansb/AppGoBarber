@@ -38,6 +38,7 @@
     "@typescript-eslint/camelcase":"off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"]}],
+    "global-require":"off",
     "import/prefer-default-export": "off",
     "import/no-duplicates":"off",
     "import/extensions":[

@@ -1,6 +1,12 @@
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
 
+export const AnimationContainer = styled.View`
+  flex: 1;
+  margin-top: 80px;
+  align-items: center;
+`;
+
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
@@ -12,7 +18,7 @@ export const Title = styled.Text`
   font-size: 32px;
   font-family: 'RobotoSlab-Medium';
   color: #f4ede8;
-  margin-top: 48px;
+  margin-top: -200px;
   text-align: center;
 `;
 

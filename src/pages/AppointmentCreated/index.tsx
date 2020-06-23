@@ -3,7 +3,9 @@ import Icon from 'react-native-vector-icons/Feather';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
+import LottieView from 'lottie-react-native';
 import {
+  AnimationContainer,
   Container,
   Title,
   Description,
@@ -34,15 +36,19 @@ const AppointmentCreated: React.FC = () => {
   }, [routeParams.date]);
 
   return (
-    <Container>
-      <Icon name="check" size={80} color="#04d361" />
-      <Title>Agendamento Concluido</Title>
-      <Description>{formattedDate}</Description>
+    <>
+      <AnimationContainer>
+        <LottieView source={require('../../assets/check.json')} autoPlay loop />
+      </AnimationContainer>
+      <Container>
+        <Title>Agendamento Concluido</Title>
+        <Description>{formattedDate}</Description>
 
-      <OkButtom onPress={handleOkPressed}>
-        <OkButtomText>OK</OkButtomText>
-      </OkButtom>
-    </Container>
+        <OkButtom onPress={handleOkPressed}>
+          <OkButtomText>OK</OkButtomText>
+        </OkButtom>
+      </Container>
+    </>
   );
 };
 
